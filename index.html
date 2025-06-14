@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhinav Srivastava | Full-Stack Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+    }
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 10vw;
+      background: linear-gradient(to right, #1e3a8a, #9333ea);
+      flex-wrap: wrap;
+    }
+    .hero-text {
+      max-width: 600px;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .hero-text p {
+      font-size: 1.2rem;
+      margin: 15px 0;
+      line-height: 1.5;
+    }
+    .badges span {
+      display: inline-block;
+      background: #facc15;
+      color: #1e293b;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin: 5px 5px 0 0;
+      font-size: 0.9rem;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      background: #facc15;
+      color: #111;
+      font-weight: 700;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #fde047;
+    }
+    .profile-pic {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #facc15;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      margin-top: 20px;
+    }
+    nav {
+      background: #1f2937;
+      padding: 15px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #e2e8f0;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #facc15;
+    }
+    section {
+      padding: 70px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      color: #facc15;
+      border-bottom: 2px solid #334155;
+      display: inline-block;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .project {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project h3 {
+      color: #facc15;
+      margin-bottom: 10px;
+    }
+    .project p {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+    .project a {
+      display: inline-block;
+      color: #38bdf8;
+      margin-top: 10px;
+      margin-right: 12px;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: #1f2937;
+      color: #94a3b8;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #facc15;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+      .profile-pic {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero-text">
+      <h1>Abhinav Srivastava</h1>
+      <p>Full-Stack Developer skilled in React, Node.js, Java, and building scalable web apps.</p>
+      <div class="badges">
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Java</span>
+        <span>MySQL</span>
+      </div>
+      <a href="#projects" class="cta-button">Start Exploring</a>
+    </div>
+    <img src="my.jpeg" alt="Abhinav Srivastava" class="profile-pic" />
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate full-stack developer with experience in both frontend and backend development. I've worked with React, Node.js, Java, SQL, and more. I completed my B.Tech in Computer Science from Dr. APJ Abdul Kalam Technical University in 2024 and also hold a Diploma from Government Polytechnic, Hardoi.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Monuments Website</h3>
+        <p>A dynamic React-based site that showcases historical monuments with rich UI and interactive content.</p>
+        <a href="#">Live Demo</a>
+        <a href="#">GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Vehicle Renting System</h3>
+        <p>A Java-based system that allows users to rent and manage vehicles with booking, user management, and tracking features.</p>
+        <a href="#">Live Demo</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:rajatsri2211@gmail.com">rajatsri2211@gmail.com</a></p>
+    <p>Phone: +91-8299506844</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/abhinav-srivastava-102b11239/">linkedin.com/in/abhinavsrivastava</a></p>
+    <p>GitHub: <a href="https://github.com/abhinav9001?tab=repositories">github.com/yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Abhinav Srivastava. All rights reserved.</p>
+    <p>Designed & Developed by <a href="index.html">Abhinav Srivastava</a></p>
+  </footer>
+</body>
+</html>
